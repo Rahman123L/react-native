@@ -1,0 +1,119 @@
+import React from 'react';
+import { ScrollView, Text, View, TouchableOpacity, Image } from 'react-native';
+import { Foundation } from '@expo/vector-icons';
+import { FontAwesome5 } from '@expo/vector-icons';
+import { FontAwesome6 } from '@expo/vector-icons';
+import { Ionicons } from '@expo/vector-icons';
+import { Fontisto } from '@expo/vector-icons';
+import { MaterialIcons } from '@expo/vector-icons';
+
+<View className='w-full h-full bg-slate-200'>
+    <ScrollView className='w-full h-full mt-[45px]'>
+      <View className='space-y-5 mt-[30px]'>
+        <Text className='mx-12 text-[25px] font-semibold text-black'>Berita Terkini</Text>
+        <View className='justify-center items-center space-y-3'>
+          <TouchableOpacity className='bg-white w-[95%] h-[80px] rounded-3xl flex-row items-center px-7'>
+            <View className='bg-slate-100 w-[40px] h-[40px] my-7 ml-0 mr-3 justify-center items-center rounded-full'>
+              <FontAwesome6 name="gripfire" size={25} color="red" />
+            </View>
+            <View className=''>
+              <Text className='text-base text-slate-900 font-semibold capitalize'>Kebakaran</Text>
+              <Text className='text-xs text-gray-500 font-semibold capitalize'>Selengkapnya...</Text>
+            </View>
+            <View className='grow'></View>
+            <Foundation name="burst-new" size={30} color="orange"/>
+          </TouchableOpacity>
+          <TouchableOpacity className='bg-white w-[95%] h-[80px] rounded-3xl flex-row items-center px-7'>
+            <View className='bg-slate-100 w-[40px] h-[40px] my-7 ml-0 mr-3 justify-center items-center rounded-full'>
+              <Ionicons name="water-sharp" size={24} color="blue" />
+            </View>
+            <View className=''>
+              <Text className='text-base text-slate-900 font-semibold capitalize'>Banjir</Text>
+              <Text className='text-xs text-gray-500 font-semibold capitalize'>Selengkapnya...</Text>
+            </View>
+            <View className='grow'></View>
+            <Foundation name="burst-new" size={30} color="orange"/>
+          </TouchableOpacity>
+          <TouchableOpacity className='bg-white w-[95%] h-[80px] rounded-3xl flex-row items-center px-7'>
+            <View className='bg-slate-100 w-[40px] h-[40px] my-7 ml-0 mr-3 justify-center items-center rounded-full'>
+              <FontAwesome5 name="car-crash" size={17} color="green" />
+            </View>
+            <View className=''>
+              <Text className='text-base text-slate-900 font-semibold capitalize'>Kecelakaan</Text>
+              <Text className='text-xs text-gray-500 font-semibold capitalize'>Selengkapnya...</Text>
+            </View>
+            <View className='grow'></View>
+            <Foundation name="burst-new" size={30} color="orange"/>
+          </TouchableOpacity>
+        </View>
+        <View className='space-y-5'>
+          <TouchableOpacity className='justify-center items-center'>
+            <View className='w-[95%] bg-white pt-2 pb-4 space-y-2 rounded-3xl'>
+              <View className='absolute z-10 right-3 bg-slate-100 w-[40px] h-[40px] my-7 ml-0 mr-3 justify-center items-center rounded-full'>
+                <FontAwesome5 name="user-injured" size={20} color="black"/>
+              </View>
+              <View className='justify-center items-center'>
+                <Image source={{ uri: 'https://akcdn.detik.net.id/community/media/visual/2024/06/09/polisi-melakukan-olah-tkp-kejadian-penganiayaan-di-jalan-wegil-prawoto-sukolilo-pati-sabtu-862024_43.jpeg?w=700&q=90'}} className='w-[95%] h-[150px] bg-white rounded-3xl'/>
+              </View>
+              <Text className='mx-5 text-[15px] font-medium text-gray-700'>ABG Pembunuh Pria yang Terbujur di Puskesmas Sukolilo Pati Ditangkap!</Text>
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity className='justify-center items-center'>
+            <View className='w-[95%] bg-white pt-2 pb-4 space-y-2 rounded-3xl'>
+              <View className='absolute z-10 right-3 bg-slate-100 w-[40px] h-[40px] my-7 ml-0 mr-3 justify-center items-center rounded-full'>
+                <FontAwesome5 name="user-injured" size={20} color="black"/>
+              </View>
+              <View className='justify-center items-center'>
+                <Image source={{ uri: 'https://akcdn.detik.net.id/community/media/visual/2024/06/08/kades-di-pati-marahi-pemuda-di-depan-mayat-di-puskesmas-sukolilo_169.png?w=700&q=90'}} className='w-[95%] h-[150px] bg-white rounded-3xl'/>
+              </View>
+              <Text className='mx-5 text-[15px] font-medium text-gray-700'>Mayat di Depan Kades Marahi Pemuda Pati Ternyata Korban Pembunuhan</Text>
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity className='justify-center items-center'>
+            <View className='w-[95%] bg-white pt-2 pb-4 space-y-2 rounded-3xl'>
+              <View className='absolute z-10 right-3 bg-slate-100 w-[40px] h-[40px] my-7 ml-0 mr-3 justify-center items-center rounded-full'>
+                <FontAwesome5 name="car-crash" size={17} color="green"/>
+              </View>
+              <View className='justify-center items-center'>
+                <Image source={{ uri: 'https://akcdn.detik.net.id/community/media/visual/2024/06/09/viral-sebuah-kecelakaan-mobil-toyota-avanza-ditabrak_169.jpeg?w=700&q=90'}} className='w-[95%] h-[150px] bg-white rounded-3xl'/>
+              </View>
+              <Text className='mx-5 text-[15px] font-medium text-gray-700'>Pengendara Avanza Cerita Mobilnya Ditabrak Lalu Masuk Parit di Tol Sidoarjo</Text>
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity className='justify-center items-center'>
+            <View className='w-[95%] bg-white pt-2 pb-4 space-y-2 rounded-3xl'>
+              <View className='absolute z-10 right-3 bg-slate-100 w-[40px] h-[40px] my-7 ml-0 mr-3 justify-center items-center rounded-full'>
+                <FontAwesome5 name="car-crash" size={17} color="green"/>
+              </View>
+              <View className='justify-center items-center'>
+                <Image source={{ uri: 'https://akcdn.detik.net.id/community/media/visual/2024/06/05/mobil-angkot-melaju-ugal-ugalan-di-sekitar-alun-alun-jalan-dewi-sartika-kota-bogor-jabar-sejumlah-kendaraan-ditabrak-angkot-be-1_11.jpeg?w=700&q=90'}} className='w-[95%] h-[150px] bg-white rounded-3xl'/>
+              </View>
+              <Text className='mx-5 text-[15px] font-medium text-gray-700'>Sopir Mabuk Menabrak 7 Kendaraan di Bogor</Text>
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity className='justify-center items-center'>
+            <View className='w-[95%] bg-white pt-2 pb-4 space-y-2 rounded-3xl'>
+              <View className='absolute z-10 right-3 bg-slate-100 w-[40px] h-[40px] my-7 ml-0 mr-3 justify-center items-center rounded-full'>
+                <Fontisto name="drug-pack" size={20} color="orange"/>
+              </View>
+              <View className='justify-center items-center'>
+                <Image source={{ uri: 'https://akcdn.detik.net.id/community/media/visual/2016/10/31/1271923e-fc5e-42c0-8a0d-86dc72c8753f_169.jpg?w=700&q=90'}} className='w-[95%] h-[150px] bg-white rounded-3xl'/>
+              </View>
+              <Text className='mx-5 text-[15px] font-medium text-gray-700'>Sanksi Tegas untuk Ketua PSI Batam yang Ditangkap karena Narkoba</Text>
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity className='justify-center items-center mb-5'>
+            <View className='w-[95%] bg-white pt-2 pb-4 space-y-2 rounded-3xl'>
+              <View className='absolute z-10 right-3 bg-slate-100 w-[40px] h-[40px] my-7 ml-0 mr-3 justify-center items-center rounded-full'>
+                <Fontisto name="drug-pack" size={20} color="orange"/>
+              </View>
+              <View className='justify-center items-center'>
+                <Image source={{ uri: 'https://akcdn.detik.net.id/community/media/visual/2022/08/16/penangkapan-pengedar-sabu-tabanan_169.jpeg?w=700&q=90'}} className='w-[95%] h-[150px] bg-white rounded-3xl'/>
+              </View>
+              <Text className='mx-5 text-[15px] font-medium text-gray-700'>2 Pria di Bone Ditangkap terkait Narkoba, Jalani Rehab di BNNP</Text>
+            </View>
+          </TouchableOpacity>
+        </View>
+      </View>
+    </ScrollView>
+</View>

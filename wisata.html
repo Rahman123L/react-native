@@ -1,0 +1,50 @@
+import React from 'react';
+import { ScrollView, Text, View, TouchableOpacity, Image } from 'react-native';
+import { Foundation } from '@expo/vector-icons';
+import { FontAwesome5 } from '@expo/vector-icons';
+import { FontAwesome6 } from '@expo/vector-icons';
+import { Ionicons } from '@expo/vector-icons';
+import { Fontisto } from '@expo/vector-icons';
+import { MaterialIcons } from '@expo/vector-icons';
+
+<View className='w-full h-full bg-[#7ad0f8]'>
+  <ScrollView className='w-full h-full space-y-4 mt-[50px]'>
+    <View className='w-full flex-row items-center space-x-3 mx-5 mt-[30px]'>
+      <Image source={{ uri: 'https://image.freepik.com/free-vector/vektor-desain-logo-pantai-vector-illustration_304830-253.jpg'}} className='w-[30px] h-[30px] bg-white rounded-full'/>
+      <Text className='text-[20px] font-bold text-blue-700 uppercase'>Wisata Alam</Text>
+    </View>
+    <View className='mx-5'>
+      <Text className='text-[30px] font-semibold text-blue-900'>Selamat Datang</Text>
+      <Text className='text-[30px] font-semibold text-blue-900'>Di Wisata Alam</Text>
+    </View>
+    <View className='justify-center items-center space-y-5'>
+      <TouchableOpacity className='bg-white w-[92%] h-[150px] rounded-3xl flex-row items-center'>
+        <Image source={{ uri: 'https://superlive.id/storage/superadventure/2018/12/12/d26d01b760a1.jpg'}} className='w-full h-full bg-white rounded-3xl'/>
+      </TouchableOpacity>
+      <TouchableOpacity className='bg-white w-[92%] h-[150px] rounded-3xl flex-row items-center'>
+        <Image source={{ uri: 'https://2.bp.blogspot.com/-CebjBAkWKcE/VBuaPVcuu4I/AAAAAAAAL8U/T6w0sRv__-w/s1600/Gambar%2BPantai%2BBali%2B2015%2BBeautiful%2BBeach.jpg'}} className='w-full h-full bg-white rounded-3xl'/>
+      </TouchableOpacity>
+      <TouchableOpacity className='bg-white w-[92%] h-[150px] rounded-3xl flex-row items-center'>
+        <Image source={{ uri: 'https://3.bp.blogspot.com/-mxGEgZQuNQk/VBuZwSsYBcI/AAAAAAAAL8E/cHCST_z2VbM/s1600/Gambar%2BPemandangan%2BPantai%2BKuta%2BBali%2BIndah%2BTerbaru.jpg'}} className='w-full h-full bg-white rounded-3xl'/>
+      </TouchableOpacity>
+    </View>
+    <View className='flex-row flex-wrap justify-evenly items-center mx-1 mb-3'>
+      <TouchableOpacity className='bg-slate-100 w-[45%] h-[170px] rounded-3xl mb-14 space-y-2'>
+        <Image source={{ uri: 'https://tempatasik.com/wp-content/uploads/2017/05/parkiran-pantai-pandawa.jpg'}} className='w-full h-full bg-white rounded-3xl'/>
+        <Text className='mx-2 text-sm font-semibold text-blue-500'>Tempat Parkir</Text>
+      </TouchableOpacity>
+      <TouchableOpacity className='bg-slate-100 w-[45%] h-[170px] rounded-3xl mb-14 space-y-2'>
+        <Image source={{ uri: 'https://3.bp.blogspot.com/-GHJfTSjE28g/Vn1t5zfZgeI/AAAAAAAAHU8/M3rqFuH-7-E/s1600/DSCF1577.JPG'}} className='w-full h-full bg-white rounded-3xl'/>
+        <Text className='mx-2 text-sm font-semibold text-blue-500'>Tempat Istirahat</Text>
+      </TouchableOpacity>
+      <TouchableOpacity className='bg-slate-100 w-[45%] h-[170px] rounded-3xl mb-14 space-y-2'>
+        <Image source={{ uri: 'https://wisatamilenial.com/wp-content/uploads/2019/10/Salah-Satu-Spot-Foto-Yang-Ada-di-Pantai-Ngobaran-Image-From-@ramadhandentarotama.jpg'}} className='w-full h-full bg-white rounded-3xl'/>
+        <Text className='mx-2 text-sm font-semibold text-blue-500'>Tempat Foto</Text>
+      </TouchableOpacity>
+      <TouchableOpacity className='bg-slate-100 w-[45%] h-[170px] rounded-3xl mb-14 space-y-2'>
+        <Image source={{ uri: 'https://awsimages.detik.net.id/community/media/visual/2022/12/09/pekerja-juga-tampak-menggarap-toilet-yang-akan-dibuat-dengan-standar-hotel-internasional_169.jpeg?w=700&q=90'}} className='w-full h-full bg-white rounded-3xl'/>
+        <Text className='mx-2 text-sm font-semibold text-blue-500'>Tempat Kamar Mandi</Text>
+      </TouchableOpacity>
+    </View>
+  </ScrollView>
+</View>
